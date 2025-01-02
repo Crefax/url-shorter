@@ -1,0 +1,27 @@
+# URL Kısaltma Servisi Kod Yazım Kuralları
+
+## Genel Kurallar
+- Tüm kod Rust formatına uygun olmalıdır (rustfmt kullanılmalı)
+- Her fonksiyon için birim testler yazılmalıdır
+- Tüm public fonksiyonlar dokümante edilmelidir
+
+## Güvenlik Kuralları
+- URL doğrulaması yapılmalıdır
+- Kullanıcı girdileri sanitize edilmelidir
+- MongoDB bağlantı bilgileri environment variables üzerinden alınmalıdır
+
+## Kod Stili
+- Değişken isimleri snake_case olmalıdır
+- Struct ve Enum isimleri PascalCase olmalıdır
+- Fonksiyon isimleri snake_case olmalıdır
+- Sabitler SCREAMING_SNAKE_CASE olmalıdır
+
+## Git Kuralları
+- Commit mesajları açıklayıcı olmalıdır
+- Her özellik ayrı bir branch'te geliştirilmelidir
+- Main branch'e direkt push yapılmamalıdır
+
+## Performans Kuralları
+- URL yönlendirmeleri maksimum 100ms içinde tamamlanmalıdır
+- Veritabanı sorguları optimize edilmelidir
+- Gereksiz allocation'lardan kaçınılmalıdır 

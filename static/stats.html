@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL İstatistikleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <h1>URL İstatistikleri</h1>
+        <div class="stats-card">
+            <div class="stat-item">
+                <div class="stat-label">Kısa URL:</div>
+                <div class="stat-value" id="shortUrl"></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Hedef URL:</div>
+                <div class="stat-value" id="longUrl"></div>
+            </div>
+            <div class="click-count">
+                <div class="stat-label">Toplam Tıklanma</div>
+                <div id="clicks"></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Oluşturulma Tarihi:</div>
+                <div class="stat-value" id="createdAt"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/stats.js"></script>
+</body>
+</html> 

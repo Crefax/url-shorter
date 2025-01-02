@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Kısaltıcı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <h1>URL Kısaltıcı</h1>
+        <form class="url-form" onsubmit="shortenUrl(event)">
+            <div class="input-group">
+                <input type="url" id="crefax-url" placeholder="URL'nizi buraya yapıştırın" autocomplete="off" required>
+            </div>
+            <button type="submit">Kısalt</button>
+        </form>
+        <div id="result">
+            <p>Kısaltılmış URL:</p>
+            <p class="short-url" id="shortUrl"></p>
+            <button class="copy-button" onclick="copyToClipboard()">Kopyala</button>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
